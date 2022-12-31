@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #d4d4d4;
+}
+.title {
+    text-align: center;
+    color: #3d3d3d;
+    padding-top: 20px;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    padding-top: 30px;
+    display: flex;
+}
+.left-content,.right-content{
+    flex-basis: 50%;
+}
+.left-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
+    grid-gap:1.5rem;
+}
+.card{
+    width: 250px;
+    background-color:#55e792;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+    padding: 0 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.card h2 {
+    font-size: 18px;
+}
+.card img {
+    width: 90h;
+    height: 90px;
+}
+.right-content{
+    width: 40%;
+    text-align: center;
+    color: black;
+    position: fixed;
+    top:100px;
+    right: 10px;
+}
+.right-content img{
+    margin: 1.5rem;
+    height: 150px;
+}
+.right-content h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 20px;
+}
+.abilities{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.abilities .group{
+    background-color: #b74555;
+    color: white;
+    padding: 0.5rem 2rem;
+    font-size: 12px;
+    border-radius: 8px;
+    margin-left: 1rem;
+}
+.base-stat{
+    margin-top: 1rem;
+    padding: 0 7rem;
+}
+.base-stat h3 {
+    width: 70%;
+    text-align: left;
+    position: relative;
+    border: none;
+    background-color: #eeeeee;
+    padding: 5px 20px;
+    margin: 5px auto;
+    border-radius: 15px;
+    text-transform: capitalize;
+}
+.base-stat span {
+    font-size: 20px;
+    color: #3d3d3d;
+    position: absolute;
+    right: 7%;
+}
+.btn-group{
+    display: flex;
+}
+.btn-group button{
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.3rem 0;
+    margin: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: #b74555;
+    border-radius: 8px;
+}
